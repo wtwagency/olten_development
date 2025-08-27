@@ -1,2 +1,237 @@
-# olten_development
-Olten Development
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Olten Development — Martin Kulli</title>
+  <meta name="description" content="Olten Development is a Los Angeles–area infill housing developer led by Martin Kulli, focused on small‑lot subdivisions, duplexes, and compact multifamily projects.">
+  <meta property="og:title" content="Olten Development — Martin Kulli" />
+  <meta property="og:description" content="Los Angeles infill housing: small‑lot, duplex, and multifamily projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;          /* white */
+      --ink:#111111;         /* near-black */
+      --muted:#6b7280;       /* slate */
+      --line:#e5e7eb;        /* light gray */
+      --accent:#0a0a0a;      /* black accents */
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+    .wrap{max-width:1120px;margin:0 auto;padding:28px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);z-index:30}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .nav a{color:var(--ink);text-decoration:none;padding:10px 12px;border-radius:10px}
+    .nav a:hover{background:#f7f7f7}
+
+    /* HERO — large type on white, SuperLA‑ish minimalism */
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;padding:64px 0 24px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;gap:22px}}
+    .eyebrow{letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;font-size:12px;margin:0 0 12px}
+    .headline{font-weight:800;letter-spacing:-.02em;font-size:56px;line-height:1.05;margin:0 0 12px}
+    .lede{color:var(--muted);max-width:60ch;margin:0}
+    .ctaRow{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none}
+    .btn.fill{background:var(--ink);color:#fff}
+
+    /* Numbered sections similar to (01)/(02)/(03) rhythm */
+    .num{font-weight:800;letter-spacing:.06em}
+    .section{padding:18px 0;border-top:1px solid var(--line)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+    .span-7{grid-column:span 7}
+    .span-5{grid-column:span 5}
+    @media (max-width:900px){.span-7,.span-5{grid-column:1 / -1}}
+
+    /* Project list — clean cards on white */
+    .list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media (max-width:900px){.list{grid-template-columns:1fr}}
+    .proj{padding:16px;border:1px solid var(--line);border-radius:12px}
+    .proj h3{margin:0 0 4px;font-size:18px}
+    .proj .addr{font-size:13px;color:var(--muted)}
+    .proj small{color:var(--muted)}
+
+    footer{padding:48px 0 64px;color:var(--muted);border-top:1px solid var(--line);margin-top:24px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Olten Development</div>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#series">Series</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Los Angeles • Infill Housing</p>
+      <h1 class="headline">Homes for real neighborhoods.</h1>
+      <p class="lede">Olten Development, led by <strong>Martin Kulli</strong>, delivers thoughtful infill across Los Angeles County—small‑lot homes, duplexes, and compact apartments—prioritizing livability, entitlement know‑how, and efficient delivery.</p>
+      <div class="ctaRow">
+        <a class="btn fill" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow num">(01)</p>
+      <h2 class="headline" style="font-size:28px;line-height:1.2;margin:0 0 8px">For people</h2>
+      <p class="lede" style="margin:0">Daylight, air, private outdoor rooms, and durable finishes—paired with practical plans that perform well for owners and renters.</p>
+      <div style="height:16px"></div>
+      <p class="eyebrow num">(02)</p>
+      <h2 class="headline" style="font-size:28px;line-height:1.2;margin:0 0 8px">For place</h2>
+      <p class="lede" style="margin:0">Site‑sensitive massing on tight lots; gentle density that fits the block.
+      </p>
+      <div style="height:16px"></div>
+      <p class="eyebrow num">(03)</p>
+      <h2 class="headline" style="font-size:28px;line-height:1.2;margin:0 0 8px">For process</h2>
+      <p class="lede" style="margin:0">A repeatable playbook for acquisitions, entitlements, and delivery to de‑risk urban infill.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section grid" aria-labelledby="about-title">
+    <div class="span-7">
+      <h2 id="about-title" class="headline" style="font-size:32px">About Martin Kulli</h2>
+      <p>Pasadena‑raised with 20+ years in real estate acquisition and development, Martin’s background spans market analysis, land development, finance, sales, and entitlements across raw land to adaptive reuse. He has stewarded the entitlement process for 2,000+ residential units.</p>
+      <p>Martin studied Applied Mathematics & Economics at the <strong>University of Rochester</strong> and later earned both an <strong>MBA</strong> and <strong>MRED</strong> at <strong>USC</strong>. He formed <strong>Olten Development</strong> in 2013 to focus on LA infill—acquiring/rehabbing 40+ single‑family homes, entitling/developing 120+ small‑lot homes, and entitling 250+ multifamily apartments with the City of Los Angeles.</p>
+    </div>
+    <aside class="span-5">
+      <div style="border:1px solid var(--line);border-radius:12px;padding:16px">
+        <p class="eyebrow">Focus</p>
+        <ul style="margin-top:8px;color:var(--muted)">
+          <li>Neighborhood infill & small‑lot subdivisions</li>
+          <li>Highest‑and‑best‑use analysis</li>
+          <li>Efficient entitlement + delivery</li>
+        </ul>
+        <p class="eyebrow" style="margin-top:14px">Affiliations</p>
+        <p style="color:var(--muted);margin:8px 0 0">ULI • BIA • USC Alumni mentor</p>
+      </div>
+    </aside>
+  </section>
+
+  <!-- SERIES / OFFERINGS -->
+  <section id="series" class="section" aria-labelledby="series-title">
+    <h2 id="series-title" class="headline" style="font-size:32px">Series</h2>
+    <div class="list" role="list">
+      <article class="proj" role="listitem">
+        <h3>Small‑Lot</h3>
+        <small>Urban homes with individual entries + terraces</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>Duplex</h3>
+        <small>2‑ to 4‑bed layouts; efficient footprints</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>Micro MF</h3>
+        <small>Compact walk‑ups; light, air, and shared greens</small>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <h2 id="projects-title" class="headline" style="font-size:32px">Selected Projects — Los Angeles County</h2>
+    <div class="list" role="list">
+      <article class="proj" role="listitem">
+        <h3>2553 Saturn St</h3>
+        <div class="addr">Los Angeles, CA 90019</div>
+        <small>4‑unit apartment (16 bed / 20 bath)</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>3987 Dalton Ave</h3>
+        <div class="addr">Los Angeles, CA 90062</div>
+        <small>4‑unit apartment (16 bed / 20 bath)</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>837 N Kingsley Dr</h3>
+        <div class="addr">Los Angeles, CA 90029</div>
+        <small>4‑unit apartment (16 bed / 20 bath)</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>22601 S Harvard St</h3>
+        <div class="addr">Torrance, CA 90501</div>
+        <small>4‑unit apartment (16 bed / 14 bath)</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>4523 St Elmo Dr</h3>
+        <div class="addr">Los Angeles, CA 90019</div>
+        <small>4‑unit apartment (16 bed / 20 bath)</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>Highland Park — Ave 56</h3>
+        <div class="addr">1118 Ave 56, Los Angeles, CA 90026</div>
+        <small>20‑home small‑lot subdivision</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>Hollywood — Gramercy</h3>
+        <div class="addr">737 N Gramercy Pl, Los Angeles, CA 90038</div>
+        <small>11‑home small‑lot subdivision</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>Larchmont — Maplewood</h3>
+        <div class="addr">5000 Maplewood Ave, Los Angeles, CA 90004</div>
+        <small>8‑home small‑lot subdivision</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>Inspire Colton</h3>
+        <div class="addr">1365 Colton St, Los Angeles, CA 90026</div>
+        <small>47‑unit apartment</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>San Pedro — Mesa</h3>
+        <div class="addr">1803 S Mesa Ave, Los Angeles, CA 90731</div>
+        <small>22‑home small‑lot subdivision</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>Silver Lake — Parkman</h3>
+        <div class="addr">742 Parkman Ave, Los Angeles, CA 90026</div>
+        <small>9‑home small‑lot subdivision</small>
+      </article>
+      <article class="proj" role="listitem">
+        <h3>Venice Beach — Penmar</h3>
+        <div class="addr">Venice, CA</div>
+        <small>11‑home small‑lot subdivision</small>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section grid" aria-labelledby="contact-title">
+    <div class="span-7">
+      <h2 id="contact-title" class="headline" style="font-size:32px">Get in touch</h2>
+      <p class="lede">We collaborate with architects, cities, and community partners to deliver attainable, well‑designed housing on tight urban sites.</p>
+      <p style="margin-top:14px">
+        <a class="btn fill" href="mailto:mkulli@oltendev.com">Email Martin</a>
+        <a class="btn" href="tel:+17602712542">Call 760‑271‑2542</a>
+      </p>
+      <p class="lede">832 Hermosa Ave, Hermosa Beach, CA 90254</p>
+    </div>
+    <aside class="span-5">
+      <div style="border:1px solid var(--line);border-radius:12px;padding:16px">
+        <p class="eyebrow">Elsewhere</p>
+        <p><a href="https://www.instagram.com/olten_development/" target="_blank" rel="noopener">@olten_development on Instagram</a></p>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="wrap">
+  <small>© <span id="y"></span> Olten Development. All rights reserved.</small>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
